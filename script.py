@@ -36,9 +36,9 @@ def downloadAudio():
 
 def renameAudio():
     originalFile = audio.default_filename
-    newFile = originalFile.replace(".webm", ".mp3")
-    newFile = originalFile.replace(".mp4", ".mp3")
-    os.rename(originalFile, newFile)
+    newFile = originalFile.replace(".webm", ".mp4")
+    newFile2 = newFile.replace(".mp4", ".mp3")
+    os.rename(originalFile, newFile2)
 
 while(menu != 0):
     os.system('cls')
